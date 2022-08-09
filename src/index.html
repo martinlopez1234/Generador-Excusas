@@ -12,18 +12,44 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+  <style>
+    #excuse {
+      text-align: center;
+      font-size: 30px;
+    }
+    strong {
+      text-align: center;
+    }
+  </style>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <strong> <p id="excuse">OMG! you will not believe me but...</p></strong>
   </body>
+  <script>
+    let who = ["the dog", "my granma", "his turtle", "my bird"];
+    let what = ["eat", "pissed", "crushed", "broked"];
+    let when = [
+      "before the class",
+      "right in time",
+      "when I finished",
+      "during my lunch",
+      "while I was praying"
+    ];
+    var alAzar = Math.floor(Math.random() * who.length);
+    var rValue = who[alAzar];
+    var alAzar1 = Math.floor(Math.random() * what.length);
+    var rValue1 = what[alAzar1];
+    var alAzar2 = Math.floor(Math.random() * when.length);
+    var rValue2 = when[alAzar2];
+
+    document.write(
+      "<h3><center><strong>" +
+        rValue +
+        " " +
+        rValue1 +
+        " my homework " +
+        rValue2 +
+        "</strong>"
+    );
+  </script>
 </html>
